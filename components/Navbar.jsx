@@ -17,6 +17,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center h-24 max-w-full mx-auto px-4 bg-[#23b5d3] text-black">
       <h1 className="w-full text-3xl font-bold text-[#071013]">Nav.</h1>
       <ul className="hidden md:flex">
+        {/* desktop menu */}
         {navLinks.map((link)=>(
             <li key={link.path} className="p-4 border-gray-600">
                 <Link href={link.path}>{link.name}</Link>
@@ -34,6 +35,7 @@ const Navbar = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">Nav.</h1>
+        {/* mobile menu */}
         {navLinks.map((link)=>(
             <li key={link.path} className="p-4 border-b border-gray-600">
                 <Link href={link.path}>{link.name}</Link>
